@@ -1,0 +1,9 @@
+function solution(n) {
+    var answer = [];
+    // answer = answer.sort((a,b) => {return a-b});
+   
+for (let i = 1; i <= n; i += 2) {
+    answer.push(i);
+  }
+    return answer;
+}
