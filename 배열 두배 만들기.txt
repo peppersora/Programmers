@@ -1,0 +1,9 @@
+function solution(numbers) {
+//     1. answer는 빈배열로 초기화
+    var answer = [];
+//     2. 반복문 사용
+    for(let i =0; i<numbers.length; i++){
+       answer.push(numbers[i]*2);
+    }
+    return answer;
+}
