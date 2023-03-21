@@ -1,0 +1,13 @@
+function solution(num_list) {
+
+    for(let i=0; i <= num_list.length-1; i++){
+//         짝수를 담은 배열
+      var evenNumber = num_list.filter(num => num % 2 == 0);
+//         홀수를 담은 배열
+        var oddNumber = num_list.filter(num => num % 2 == 1);
+        var result = [evenNumber.length,oddNumber.length];
+        
+    }
+   return result;
+   
+}
