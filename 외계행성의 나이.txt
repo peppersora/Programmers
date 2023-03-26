@@ -1,0 +1,11 @@
+function solution(age) {
+  let result = '';
+  
+  while (age > 0) {
+    const remainder = age % 10;
+    result = String.fromCharCode(97 + remainder) + result;
+    age = Math.floor(age / 10);
+  }
+  
+  return result;
+}
