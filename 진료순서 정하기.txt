@@ -1,0 +1,8 @@
+function solution(emergency) {
+  const sortedEmergency = emergency.slice().sort((a, b) => b - a); 
+    // slice 함수를 사용해 배열을 복제한 후, 입력된 배열을 내림차순으로 정렬하여 새로운 배열 생성
+  const result = emergency.map((value) => sortedEmergency.indexOf(value)); 
+    // 정렬된 배열에서 각 요소의 인덱스를 찾아 새로운 배열에 저장
+  return result.map((value) => value + 1); 
+    // 인덱스는 0부터 시작하므로 1을 더하여 반환
+}
