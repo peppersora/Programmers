@@ -1,0 +1,29 @@
+function solution(letter) {
+
+//   morse에 관한 변수를 배열로 담아준다.
+    const morse = { 
+    '.-':'a','-...':'b','-.-.':'c','-..':'d','.':'e','..-.':'f',
+    '--.':'g','....':'h','..':'i','.---':'j','-.-':'k','.-..':'l',
+    '--':'m','-.':'n','---':'o','.--.':'p','--.-':'q','.-.':'r',
+    '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
+    '-.--':'y','--..':'z'
+}
+//     "" 큰따옴표를 기준으로 letter를 나눈 뒤 이것을 words 변수에 담았다.
+    const words = letter.split(" ");
+    //     result는 빈문자열로 초기화 =>영어 소문자로 바꾼 문자열
+     let result = "";
+//     words의 길이 만큼 반복문을 돌려준다.
+    for(let i = 0; i < words.length; i++){
+        const word = words[i];
+        const codes = word.split(" ");
+//      이중 for문을 이용해서 word를 다시 쪼개자.
+        for(let j = 0; j < codes.length; j++){
+            const code = codes[j];
+//             result에 담아주기
+            result += morse[code];
+        }
+         result += "";
+    }
+//    trim() 함수를 이용해서 공백을 제거해준다.
+    return result.trim();
+}
