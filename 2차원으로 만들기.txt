@@ -1,0 +1,11 @@
+function solution(num_list, n) {
+ 
+// 1. num_list 배열을 n개씩 slice해준다.
+// 2. slice된 배열들을 모아서 다시 반환해준다.
+// 3. i += n =>  i = i + n과 같은 의미
+ const slices = [];
+  for (let i = 0; i < num_list.length; i += n) {
+    slices.push(num_list.slice(i, i + n));
+  }
+  return slices;
+}
