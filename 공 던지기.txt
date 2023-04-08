@@ -1,0 +1,11 @@
+function solution(numbers, k) {
+    var answer = 0;
+//  정수배열 numbers, 정수 k
+//  공은 1번부터 던지고, 자신으로부터 [k+2]에게만 던질 수 있다.
+//  입출력 예시 k=2일때(두번째로 공을 던지는 번호)
+//  1번 -> 3번 -> 따라서 result =3;
+//  정리하면, k=n일때 (n번째로 공을 던지는 번호)  
+    
+    return numbers[(2*(k-1) % numbers.length)];
+    
+}
