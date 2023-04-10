@@ -1,0 +1,11 @@
+function solution(box, n) {
+
+    var answer = 0;
+    
+    var width = box[0]/n;
+    var length = box[1]/n;
+    var height = box[2]/n;
+    
+    return Math.floor(width)* Math.floor(length) *Math.floor(height);
+    
+}
