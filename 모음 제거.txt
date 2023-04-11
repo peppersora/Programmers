@@ -1,0 +1,7 @@
+function solution(my_string) {
+    var result = "";
+    var remover = ["a","e","i","o","u"];
+    return [...my_string].filter(x => !remover.includes(x)).join("");
+     
+    
+}
