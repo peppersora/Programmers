@@ -1,0 +1,10 @@
+function solution(my_string) {
+//     접근방식
+//     1. my_string에서 자연수만 추출 => > 0
+//     2. 그 숫자들의 총합
+    var answer = 0;
+    var answer = [...my_string].filter( x => x >0);
+//     "1,2,3,4" => 이 문자열의 합 =>1+2+3+4
+    var sum = answer.reduce((acc, curr) => acc + parseInt(curr),0);
+    return sum;
+}
