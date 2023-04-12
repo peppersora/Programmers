@@ -1,0 +1,15 @@
+function solution(n) {
+//     입출력예시를 보면,
+//     주어진 n의값 3628800는 1*2*3*...10까지 곱한값이다.
+//     다시말해, i!를 1부터 i까지의 모든 정수를 곱한값이다.
+//     따라서 i!이 n이하일때, i를 1씩 증가시키면서 i!를 계산하면 된다.
+  let i = 1;
+  let factorial = 1;
+  
+  while (factorial <= n) {
+    i++;
+    factorial *= i;
+  }
+  
+  return i - 1;
+}
