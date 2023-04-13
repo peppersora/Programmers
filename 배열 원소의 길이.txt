@@ -1,0 +1,11 @@
+function solution(strlist) {
+// strlist[0],strlist[1],strlist[2]..strlist[length-1]
+// 반복문을 통해서 strlist의 원소를 알아야한다.   
+    var answer = [];
+    
+     for(let i = 0; i < strlist.length; i++){
+        answer.push(strlist[i].length);
+    }
+    return answer;
+
+}
