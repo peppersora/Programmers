@@ -1,0 +1,15 @@
+function solution(s) {
+  const gap = s.split(' ');
+  let sum = 0;
+  let prev = null;
+  for (const item of gap) {
+    if (item === 'Z') {
+      sum -= prev;
+      prev = null;
+    } else {
+      prev = Number(item);
+      sum += prev;
+    }
+  }
+  return sum;
+}
