@@ -1,0 +1,14 @@
+function solution(my_string) {
+
+//  result를 빈문자열로 초기화
+    var result = "";
+    for(let i =0; i < my_string.length; i++){
+         const str = my_string[i];
+        if(result.indexOf(str) === -1){
+//             result에 str이 없으면 추가
+            result += str;
+        }
+    }
+    return result;
+
+}
