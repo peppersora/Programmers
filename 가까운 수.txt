@@ -1,0 +1,17 @@
+function solution(array, n) {
+//  가장 가까운수를 array배열의 가장 작은 수
+    var close = array[0];
+//  array배열의 값이 n 보다 크거나 작을 수 있으므로 절댓값으로 계산해야한다.
+//  n과 array[0]에 대한 차를 절댓값으로 나타낸 변수
+    var diff = Math.abs(n-close);
+    for(let i =0; i < array.length; i++){
+        let newDiff = Math.abs(n-array[i]);
+        if(newDiff < diff){
+         close = array[i];
+            diff = newDiff;
+        }else if(newDiff === diff && array[i] < close){
+            close = array[i]; 
+        }       
+    }  
+    return close
+}
