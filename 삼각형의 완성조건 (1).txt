@@ -1,0 +1,14 @@
+function solution(sides) {
+
+        var answer = 0;
+        var answer = [...sides].sort(function(a, b) {
+         return a-b;
+              });
+        var answer1 = answer[0]+answer[1];
+        var answer2 = answer[2];
+            if(answer1 <= answer2){
+                return 2;
+            }else{
+                return 1;
+            }     
+}
