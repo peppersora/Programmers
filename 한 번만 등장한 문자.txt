@@ -1,0 +1,20 @@
+function solution(s) {
+    var answer = '';
+    let onetime = "";
+    for(let i=0; i<s.length; i++){
+
+        let char = s[i];
+        let count = 0;
+
+       for(let j=0; j<s.length; j++){
+           if(char === s[j]){
+               count++;
+           }
+       }
+        if(count === 1){
+            onetime += char;
+        }
+    }
+    answer = onetime.split("").sort().join("");
+    return answer;
+}
