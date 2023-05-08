@@ -1,0 +1,10 @@
+function solution(n) {
+    var answer = [];
+    for(let i =1; i<=n; i++){
+//         i를 1부터 n까지 반복문을 통해서 증가시켰을때
+        if(n%i === 0){
+            answer.push(i);
+        }
+    }
+    return answer;
+}
